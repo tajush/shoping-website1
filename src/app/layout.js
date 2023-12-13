@@ -6,6 +6,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Hero from './Components/Hero';
 import HeaderMain from './Components/HeaderMain';
+import Navbar from "./Components/Navbar";
+import NewProducts from "./Components/NewProducts";
+import Testimonial from "./Components/Testimonial";
+import MobNavbar from "./MobNavbar";
+import Footer from "./Footer";
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,8 +27,14 @@ export default function RootLayout({ children }) {
      
         <HeaderTop />
         <HeaderMain />
+        <Navbar />
         <Hero />
-        {children}</body>
+        <NewProducts />
+        <Testimonial />
+        <MobNavbar />
+        {children}
+        <Footer />
+        </body>
     </html>
   )
 }
