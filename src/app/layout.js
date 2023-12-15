@@ -1,16 +1,11 @@
 import React from "react";
 import { Inter } from 'next/font/google'
 import './globals.css'
-import HeaderTop from './Components/HeaderTop'
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Hero from './Components/Hero';
-import HeaderMain from './Components/HeaderMain';
-import Navbar from "./Components/Navbar";
-import NewProducts from "./Components/NewProducts";
-import Testimonial from "./Components/Testimonial";
-import MobNavbar from "./MobNavbar";
-import Footer from "./Footer";
+
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,15 +20,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
      
-        <HeaderTop />
-        <HeaderMain />
-        <Navbar />
-        <Hero />
-        <NewProducts />
-        <Testimonial />
-        <MobNavbar />
         {children}
-        <Footer />
+
         </body>
     </html>
   )
