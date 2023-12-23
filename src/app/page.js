@@ -5,7 +5,7 @@ import Navbar from "./Components/Navbar";
 import NewProducts from "./Components/NewProducts";
 import Testimonial from "./Components/Testimonial";
 import MobNavbar from "./Components/MobNavbar";
-import Footer from "./Components/Footer";
+
 import Practice from "./Components/Practice";
 import HeaderTop from './Components/HeaderTop'
 const page = () => {
@@ -18,7 +18,7 @@ const page = () => {
         <Testimonial />
         <MobNavbar />
         <Practice />
-        <Footer />
+        
   </>;
 };
 

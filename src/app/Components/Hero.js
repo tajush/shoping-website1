@@ -11,7 +11,7 @@ const Hero = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    pauseOnHover: false,
+    pauseOnHover: true,
   };
 
   const slideData = [

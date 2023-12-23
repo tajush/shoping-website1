@@ -4,7 +4,7 @@ import React from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 const ProductCard = ({ img, title, desc, rating, price }) => {
-  const generateRating = () => {
+  const GenerateRating = () => {
     switch (rating) {
       case 1:
         return (
@@ -77,12 +77,14 @@ const ProductCard = ({ img, title, desc, rating, price }) => {
       <div className="space-y-2 py-2">
         <h2 className="text-accent font-medium uppercase">{title}</h2>
         <p className="text-gray-500 max-w-[150px]">{desc}</p>
-        <div>{generateRating()}</div>
+        <div>
+          <GenerateRating/>
+        </div>
 
         <div className="font-bold flex gap-4">
-          ${price}
+          ${parseInt(price* (50/100))}
           <del className="text-gray-500 font-normal">
-            ${parseInt(price) + 50  }.00
+            ${ price }
           </del>
         </div>
       </div>
