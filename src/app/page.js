@@ -6,7 +6,7 @@ import NewProducts from "./Components/NewProducts";
 import Testimonial from "./Components/Testimonial";
 import MobNavbar from "./Components/MobNavbar";
 
-import Practice from "./Components/Practice";
+
 import HeaderTop from './Components/HeaderTop'
 const page = () => {
   return <>
@@ -17,7 +17,7 @@ const page = () => {
         <NewProducts />
         <Testimonial />
         <MobNavbar />
-        <Practice />
+        
         
   </>;
 };
