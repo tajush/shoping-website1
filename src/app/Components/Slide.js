@@ -11,6 +11,7 @@ const Slide = ({ img, title, mainTitle, price }) => {
         <h2 className="text-blackish text-[26px] md:text-[30px] lg:text-[44px] font-bold leading-[1.2]">
           {mainTitle}
         </h2>
+        
 
         <h3 className="text-[24px] text-gray-500">
           starting at
